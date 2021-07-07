@@ -12,7 +12,7 @@ SYSTEM_THREAD(ENABLED);
 // Print 10 samples per second to serial
 const unsigned long PRINT_SAMPLE_PERIOD = 100;
 
-// LIS3DH is connected as in the AssetTracker, to the primary SPI with A2 as the CS (SS) pin, and INT connected to WKP
+// LIS3DH is connected as in the AssetTracker, to the primary SPI with D3 as the CS (SS) pin, and INT connected to WKP
 LIS3DHSPI accel(SPI, D3, WKP);
 
 unsigned long lastPrintSample = 0;
